@@ -1,7 +1,7 @@
 FROM puppet/puppet-agent-alpine
 
-ARG LANG_SERVER_VERSION=0.12.0
-ARG IMAGE_NAME=lingua-pupuli/languageserver:0.12.0
+ARG LANG_SERVER_VERSION=0.16.0
+ARG IMAGE_NAME=lingua-pupuli/languageserver:0.16.0
 
 LABEL maintainer="Lingua-Pupuli Team" \
         readme.md="https://github.com/lingua-pupuli/images/blob/master/README.md" \
@@ -12,7 +12,7 @@ LABEL maintainer="Lingua-Pupuli Team" \
         org.label-schema.name="languageserver" \
         org.label-schema.vendor="lingua-pupuli" \
         org.label-schema.version=${LANG_SERVER_VERSION}} \
-        org.label-schema.schema-version="1.0" 
+        org.label-schema.schema-version="1.0"
 
 ADD "https://github.com/lingua-pupuli/puppet-editor-services/releases/download/${LANG_SERVER_VERSION}/puppet_editor_services_${LANG_SERVER_VERSION}.tar.gz" /puppet_editor_services_${LANG_SERVER_VERSION}.tar.gz
 

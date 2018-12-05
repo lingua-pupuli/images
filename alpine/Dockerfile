@@ -1,7 +1,7 @@
 FROM puppet/puppet-agent-alpine:latest
 
-ARG LANG_SERVER_VERSION=0.12.0
-ARG IMAGE_NAME=lingua-pupuli/languageserver:0.12.0
+ARG LANG_SERVER_VERSION=0.16.0
+ARG IMAGE_NAME=lingua-pupuli/languageserver:0.16.0
 
 LABEL maintainer="Lingua-Pupuli Team" \
         readme.md="https://github.com/lingua-pupuli/images/blob/master/README.md" \

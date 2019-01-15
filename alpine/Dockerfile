@@ -1,7 +1,6 @@
 FROM puppet/puppet-agent-alpine:latest
 
-ARG LANG_SERVER_VERSION=0.16.0
-ARG IMAGE_NAME=lingua-pupuli/languageserver:0.16.0
+ARG LANG_SERVER_VERSION=0.17.0
 
 LABEL maintainer="Lingua-Pupuli Team" \
         readme.md="https://github.com/lingua-pupuli/images/blob/master/README.md" \
@@ -9,7 +8,7 @@ LABEL maintainer="Lingua-Pupuli Team" \
         org.label-schema.usage="https://github.com/lingua-pupuli/images/blob/master/README.md#run-the-docker-image-you-built" \
         org.label-schema.url="https://github.com/lingua-pupuli/images/blob/master/README.md" \
         org.label-schema.vcs-url="https://github.com/lingua-pupuli/images" \
-        org.label-schema.name="languageserver" \
+        org.label-schema.name="puppet-language-server" \
         org.label-schema.vendor="lingua-pupuli" \
         org.label-schema.version=${LANG_SERVER_VERSION}} \
         org.label-schema.schema-version="1.0"
